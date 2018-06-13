@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Register Form</title>
+	<style>
+
+table {
+
+    border-collapse: collapse;
+    width: 50%;
+}
+
+.sheetal, td {
+    text-align: left;
+    padding: 8px;
+	border: 1px solid black;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+.sheetal {
+    background-color: red;
+    color: white;
+	height: 40px;
+}
+p
+{
+	color:#f44336;
+	font: 30px Arial, Helvetica, sans-serif;
+}
+.bg {
+    
+    background-image: url("images.png");
+
+    
+    height: 100%; 
+
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+	
+
+</style>
+</head>
+<body class="bg">
+
+<p><b>SIGN UP HERE :</b></p>
+
+<form action="insert.php" method="POST">
+	<table>
+		<tr>
+			<td class="sheetal">
+			<b>Name:</b>
+			</td>
+			<td>
+			<input type:"text" placeholder="enter name" name="username" required>
+			</td>
+		</tr>
+		<tr>
+			<td class="sheetal">
+			<b>Password:</b>
+			</td>
+			<td>
+			<input type="password" placeholder="enter password" name="password" required>
+			</td>
+		</tr>
+			<td class="sheetal">
+			<b>Gender:</b>
+			</td>
+			<td>
+			<input type="radio" name="gender" value="m" required>Male
+			<input type="radio" name="gender" value="f" required>Female
+			</td>
+			
+		</tr>
+		<tr>
+			<td class="sheetal">
+			<b>Email:</b>
+			</td>
+			<td>
+			<input type="mail" placeholder="enter email" name="email" required>
+			</td>
+		</tr>
+		<tr>
+			<td class="sheetal">
+			<b>Phone No:</b>
+			<td/>
+			<td>
+				<select name="phoneCode" required>
+					<option selected hidden value="">Select Code</option>
+					<option>091</option>
+					<option>092</option>
+					<option>093</option>
+					<option>094</option>
+			    </select>
+				<input type="phone" placeholder="enter phone no" name="phone" required>
+			</td>
+			
+			
+		</tr>
+		<tr>
+			
+			<td style="background-color:red">
+			<input type="Submit" class="sheetal" style="border: none"  value="Submit">
+			</td>
+		</tr>
+		
+	</table>
+</form>
+</body>
+</html>
+				
+		
+			
+		
+			
+			
+			
+			
+			
